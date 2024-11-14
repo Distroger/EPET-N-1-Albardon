@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producción Minera en San Juan, Argentina</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #1c92d2, #f2fcfe); /* Fondo en tonos azules */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chart-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #1c92d2;
+        }
+
+        canvas {
+            width: 100%;
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chart-container">
+        <h1>Producción Minera en San Juan</h1>
+        <h2>Evolución de la Producción de Minerales en Toneladas</h2>
+        <canvas id="miningChartSanJuan"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía Interactiva del Proceso Minero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>El Proceso de Minería: De la Exploración a la Extracción</h1>
+        <div class="infographic">
+            <div class="stage" id="exploration">
+                <div class="icon">
+                    <img src="imj1.jpg" alt="Exploración">
+                </div>
+                <a href="exploracion.html" class="btn">Exploracion</a>
+                <p id="exploration-info" class="info-text"></p>
+            </div>
+            <div class="stage" id="extraction">
+                <div class="icon">
+                    <img src="imj2.jpg" alt="Extracción">
+                </div>
+                <button class="info-btn" onclick="showInfo('extraction')">Extracción</button>
+                <p id="extraction-info" class="info-text"></p>
+            </div>
+            <div class="stage" id="processing">
+                <div class="icon">
+                    <img src="imj3.jpg" alt="Procesamiento">
+                </div>
+                <button class="info-btn" onclick="showInfo('processing')">Procesamiento</button>
+                <p id="processing-info" class="info-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

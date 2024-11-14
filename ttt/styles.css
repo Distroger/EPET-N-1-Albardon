@@ -1,0 +1,1069 @@
+/* Reset y estilos básicos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef2f3;
+    color: #333;
+}
+
+/* Contenedor centralizado */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Estilos del héroe */
+.hero {
+    background: url('imj/truck.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    background: #fff;
+    color: #6a82fb;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #6a82fb;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Estilos de características */
+.features {
+    padding: 40px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    text-align: center;
+    flex: 1 1 calc(24% - 30px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+    font-size: 3em;
+    color: #6a82fb;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Estilos del pie de página */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/*iconos de links*/
+
+
+.socials {
+    list-style: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .feature-card {
+        flex: 1 1 calc(48% - 30px);
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de encabezado */
+header {
+    background-color: #2e6da4;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el cuerpo principal */
+main {
+    margin-top: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2, h3, h4 {
+    color: #2e6da4;
+}
+
+/* Sección sobre minería */
+#mineria {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#mineria p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#mineria ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+#mineria ul li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#mineria ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#mineria ul li a:hover {
+    text-decoration: underline;
+}
+
+#mineria h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#mineria h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo de enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2e6da4;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Estilos de dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #mineria h3 {
+        font-size: 1.8rem;
+    }
+
+    #mineria h4 {
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+    
+    /*imagen centrada*/
+    .contenedor {
+  display: grid;
+  place-items: center;  /* Centrado horizontal y vertical */
+  height: 100vh;        /* Altura del contenedor (opcional) */
+}
+
+.imagen {
+  max-width: 100%;
+  max-height: 100%;
+}
+ 
+ /*mineria1 css*/
+
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+/* Container to centralize content */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main content section */
+main {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.historia {
+    margin-bottom: 40px;
+}
+
+.historia h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #34495E;
+}
+
+.historia p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2e6da4;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/*mineria2 css*/
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Fuentes personalizadas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilo del contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de la cabecera */
+header {
+    background: linear-gradient(135deg, #2b5876, #4e4376); /* Fondo degradado */
+    color: #fff;
+    padding: 30px 0;
+    border-bottom: 4px solid #34495e;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Color dorado */
+    transform: translateY(-2px);
+}
+
+/* Estilo de las secciones */
+main {
+    background-color: #fff;
+    padding: 50px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: square;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Estilo para la sección de minería responsable */
+.mineria-responsable {
+    background: #ecf3f6; /* Fondo suave */
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mineria-responsable h2 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mineria-responsable p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.mineria-responsable ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 4px solid #f39c12; /* Línea dorada en la parte superior */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Efectos hover para botones y enlaces */
+button, a {
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover, a:hover {
+    background-color: #f39c12;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+/*mineria3 css*/
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Fuentes personalizadas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilo del contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de la cabecera */
+header {
+    background: linear-gradient(135deg, #1f5f8b, #4db8ff); /* Fondo degradado */
+    color: #fff;
+    padding: 30px 0;
+    border-bottom: 4px solid #2c3e50;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Color dorado */
+    transform: translateY(-2px);
+}
+
+/* Estilos de las secciones */
+main {
+    background-color: #fff;
+    padding: 50px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: square;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Estilo para la sección de futuro de la minería */
+.futuro-mineria {
+    background: #ecf3f6; /* Fondo suave */
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.futuro-mineria h2 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.futuro-mineria p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.futuro-mineria ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 4px solid #f39c12; /* Línea dorada en la parte superior */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Efectos hover para botones y enlaces */
+button, a {
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover, a:hover {
+    background-color: #f39c12;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+.ponermargen{
+    margin: 2em;
+}
+
+/*Mterias*/
+
+
+
+/*EVENTOS*/
+
+/*imagenes*/
+.contenedor-imagenes {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las imágenes salten a una nueva fila si es necesario */
+        gap: 20px; /* Espacio entre las imágenes */
+        justify-content: center; /* Centra las imágenes horizontalmente */
+        padding: 20px;
+        background-color: white; /* Fondo para resaltar las imágenes--#f0f0f0-- */
+        border-radius: 10px;
+    }
+
+    /* Estilo para cada imagen */
+    .contenedor-imagenes img {
+        max-width: 100%; /* Asegura que las imágenes no crezcan más de su tamaño original */
+        height: auto;
+        border-radius: 12px; /* Bordes redondeados */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar las imágenes */
+        transition: transform 0.3s, box-shadow 0.3s; /* Efecto suave al pasar el mouse */
+    }
+
+    /* Efecto de hover */
+    .contenedor-imagenes img:hover {
+        transform: scale(1.05); /* Agranda un poco la imagen al pasar el mouse */
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra en hover */
+    }
+
+    /*Libros Mineria*/
+
+    /* Estilo para la sección de Libros Recomendados */
+.libros-recomendados {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.libros-recomendados h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.libros-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.libro {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.libro h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.libro p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #555;
+}
+
+/*Videos*/
+
+/* Reseteo básico de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #34495e;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    border-bottom: 4px solid #2c3e50;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+}
+
+/* Sección de videos */
+.videos {
+    background-color: white;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.videos h2 {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de los videos */
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.video-container iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .videos h2 {
+        font-size: 1.5em;
+    }
+
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container iframe {
+        width: 90%;
+        height: auto;
+    }
+}
+
