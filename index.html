@@ -35,118 +35,39 @@
             padding: 20px 0;
         }
 
-        /* Estilos para las tarjetas de categorías */
-        .container__card {
-            max-width: 1200px;
-            margin: auto;
-            margin-top: 50px;
-            perspective: 1000px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .card__father {
-            margin: 20px;
-            perspective: 1000px;
-        }
-
-        .card__father:hover .card {
-            transform: rotateY(180deg);
-        }
-
-        .card {
-            width: 350px;
-            height: 400px;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: all 600ms;
-        }
-
-        .card__front {
-            background-size: cover;
-            background-position: center;
-            background-image: url('images/bg-category.jpg');
-        }
-
-        .card__front,
-        .card__back {
-            width: 100%;
-            height: 100%;
+        /* Botón de descarga */
+        .download-button {
             position: absolute;
-            top: 0;
-            left: 0;
-            backface-visibility: hidden;
-            transform-style: preserve-3d;
-            border-radius: 20px;
-        }
-
-        .card__back {
-            transform: rotateY(180deg);
-            background: #fff;
-        }
-
-        .body__card_front {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            padding: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            transform: translateZ(60px);
-        }
-
-        .bg {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 20px;
-        }
-
-        .body__card_back {
-            padding: 40px;
-            text-align: center;
-            transform: translateZ(60px);
-        }
-
-        .body__card_back p {
-            margin-top: 30px;
-            font-size: 18px;
-        }
-
-        .body__card_back input {
-            padding: 10px 40px;
-            margin-top: 30px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
             color: white;
-            background: #58B0F6;
-            box-shadow: 1px 1px 30px -5px #58B0F6;
-            border-radius: 10px;
-            transition: box-shadow 600ms;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .body__card_back input:hover {
-            box-shadow: 1px 1px 30px 0px #449de6;
+        .download-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
+    <!-- Botón para descargar requisitos -->
+    <a href="Inscripcion.docx" download="Requisitos_Inscripcion.pdf" class="download-button">Descargar requisitos de inscripción</a>
 
     <!-- Título y descripción -->
     <header>
-        <h1>Bienvenidos a nuestro portal interaactivo</h1>
+        <h1>Bienvenidos a nuestro portal interactivo</h1>
         <h2>E.P.E.T. N°1 de Albardón</h2>
     </header>
 
     <div class="description">
-        <p>Podras explorar e indagar sobre las distintas especialidades que ofrece nuestra institución.</p>
+        <p>Podrás explorar e indagar sobre las distintas especialidades que ofrece nuestra institución.</p>
     </div>
 
     <!-- Imagen bajo la descripción -->
@@ -163,17 +84,17 @@
                         <div class="bg"></div>
                         <div class="body__card_front">
                             <center>
-                            <h1></h1>
+                                <h1></h1>
                             </center>
                         </div>
                     </div>
                     <div class="card__back">
                         <div class="body__card_back">
                             <center>
-                            <h1>Informática</h1>
+                                <h1>Informática</h1>
                             </center>
                             <p>Aprenda sobre programación, sistemas y redes en nuestro programa de informática.</p>
-                            <input type="button" value="Leer Más" onclick="window.location.href='informatica.html'">
+                            <input type="button" value="Leer Más" onclick="window.location.href='informatica/index.html'">
                         </div>
                     </div>
                 </div>
@@ -185,7 +106,7 @@
                         <div class="bg"></div>
                         <div class="body__card_front">
                             <center>
-                            <h1></h1>
+                                <h1></h1>
                             </center>
                         </div>
                     </div>
@@ -211,13 +132,12 @@
                         <div class="body__card_back">
                             <h1>Construcciones</h1>
                             <p>Explore los fundamentos y prácticas de construcción en nuestro programa.</p>
-                            <input type="button" value="Leer Más" onclick="window.location.href='construcciones.html'">
+                            <input type="button" value="Leer Más" onclick="window.location.href='construcciones/index.html'">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
 </body>
 </html>
