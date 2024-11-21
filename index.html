@@ -1,241 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Información</title>
-
-    <!-- Enlace al CSS externo -->
-    <link rel="stylesheet" href="css/estilos.css">
-
-    <style>
-        /* Estilos adicionales para la estructura general */
-        body {
-            background-color: #E0F7FF;
-            font-family: 'Lato', sans-serif;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            color: #007BFF;
-        }
-
-        .description {
-            text-align: center;
-            padding: 10px 20px;
-            color: #555;
-            font-size: 18px;
-        }
-
-        .image {
-            display: flex;
-            justify-content: center;
-            padding: 20px 0;
-        }
-
-        /* Estilos para las tarjetas de categorías */
-        .container__card {
-            max-width: 1200px;
-            margin: auto;
-            margin-top: 50px;
-            perspective: 1000px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .card__father {
-            margin: 20px;
-            perspective: 1000px;
-        }
-
-        .card__father:hover .card {
-            transform: rotateY(180deg);
-        }
-
-        .card {
-            width: 350px;
-            height: 400px;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: all 600ms;
-        }
-
-        .card__front {
-            background-size: cover;
-            background-position: center;
-            background-image: url('images/bg-category.jpg');
-        }
-
-        .card__front,
-        .card__back {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            backface-visibility: hidden;
-            transform-style: preserve-3d;
-            border-radius: 20px;
-        }
-
-        .card__back {
-            transform: rotateY(180deg);
-            background: #fff;
-        }
-
-        .body__card_front {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            padding: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            transform: translateZ(60px);
-        }
-
-        .bg {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 20px;
-        }
-
-        .body__card_back {
-            padding: 40px;
-            text-align: center;
-            transform: translateZ(60px);
-        }
-
-        .body__card_back p {
-            margin-top: 30px;
-            font-size: 18px;
-        }
-
-        .body__card_back input {
-            padding: 10px 40px;
-            margin-top: 30px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            color: white;
-            background: #58B0F6;
-            box-shadow: 1px 1px 30px -5px #58B0F6;
-            border-radius: 10px;
-            transition: box-shadow 600ms;
-        }
-
-        .body__card_back input:hover {
-            box-shadow: 1px 1px 30px 0px #449de6;
-        }
-    </style>
+    <title>Desarrollo de Software</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Título y descripción -->
-    <header>
-        <h1>Bienvenidos a nuestro portal interactivo</h1>
-        <h2>E.P.E.T. N°1 de Albardón</h2>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="header-content">
+            <h2>E.P.E.T. N°1 Albardón</h2>
+            <h1>BIENVENIDOS A NUESTRO PORTAL INTERACTIIVO</h1>
+            <p>Con 3 tecnicaturas especializadas y mas de 2000 egresados.</p>
+            <style>  
+                .download-button {  
+                  color: red; /* Cambia el color del texto a rojo */  
+                }  
+              </style>  
+              
+              <a href="Inscripcion.docx" download="Inscripcion.docx" class="download-button">// Descargar requisitos de inscripción //</a>
+        </div>
     </header>
 
-    <div class="description">
-        <p>Podras explorar e indagar sobre las distintas especialidades que ofrece nuestra institución.</p>
-    </div>
-
-    <!-- Imagen bajo la descripción -->
-    <div class="image">
-        <img src="EPET.jpeg" alt="Imagen educativa de fondo" width="80%">
-    </div>
-
-    <div class="description">
-        <p>Haz click sobre las tarjetas grises para iniciar la interaccion ;D</p>
-    </div>
-
-    <!-- Contenedor de las tarjetas interactivas -->
-    <main>
-        <div class="container__card">
-            <div class="card__father">
-                <div class="card">
-                    <div class="card__front" style="background-image: url('images/img1.jpg');">
-                        <div class="bg"></div>
-                        <div class="body__card_front">
-                            <center>
-                            <h1></h1>
-                            </center>
-                        </div>
-                    </div>
-                    <div class="card__back">
-                        <div class="body__card_back">
-                            <center>
-                            <h1>Informática</h1>
-                            </center>
-                            <p>Aprenda sobre programación, sistemas y redes en nuestro programa de informática.</p>
-                            <input type="button" value="Leer Más" onclick="window.location.href='informatica/index.html'">
-                        </div>
-                    </div>
-                </div>
+    <!-- Sección: Por qué elegirnos -->
+    <section class="why-choose-us" id="learn-more">
+        <h2>// POR QUÉ ELEGIRNOS //</h2>
+        <h3>Interactua con las propuestas de cada carrera</h3>
+        <div class="services">
+            <div class="service-card">
+                <h4>Construcciones</h4>
+                <p>Explore los fundamentos y prácticas de construcción en nuestro programa.</p>
+                <a href="construcciones/index.html">Más información</a>
             </div>
-
-            <div class="card__father">
-                <div class="card">
-                    <div class="card__front" style="background-image: url('images/img2.jpg');">
-                        <div class="bg"></div>
-                        <div class="body__card_front">
-                            <center>
-                            <h1></h1>
-                            </center>
-                        </div>
-                    </div>
-                    <div class="card__back">
-                        <div class="body__card_back">
-                            <h1>Minería</h1>
-                            <p>Descubra técnicas y herramientas utilizadas en la minería moderna.</p>
-                            <input type="button" value="Leer Más" onclick="window.location.href='ttt/index.html'">
-                        </div>
-                    </div>
-                </div>
+            <div class="service-card">
+                <h4>Informatica</h4>
+                <p>Aprenda sobre programación, sistemas y redes en nuestro programa de informática.</p>
+                <a href="informatica/index.html">Más información</a>
             </div>
-
-            <div class="card__father">
-                <div class="card">
-                    <div class="card__front" style="background-image: url('images/img3.jpg');">
-                        <div class="bg"></div>
-                        <div class="body__card_front">
-                            <h1></h1>
-                        </div>
-                    </div>
-                    <div class="card__back">
-                        <div class="body__card_back">
-                            <h1>Construcciones</h1>
-                            <p>Explore los fundamentos y prácticas de construcción en nuestro programa.</p>
-                            <input type="button" value="Leer Más" onclick="window.location.href='construcciones/index.html'">
-                        </div>
-                    </div>
-                </div>
+            <div class="service-card">
+                <h4>Mineria</h4>
+                <p>Descubra técnicas y herramientas utilizadas en la minería moderna.</p>
+                <a href="ttt/index.html">Más información</a>
             </div>
         </div>
-    </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <center>
-    <!-- Botón para descargar requisitos -->
-    <a href="Inscripcion.docx" download="Inscripcion.docx" class="download-button">Descargar requisitos de inscripción</a>
-    
-    <br>
-    <br>
-    <input type="button" value="¿Quienes desarrollaron la pagina?" onclick="window.location.href='gracias/index.html'">
-    </center>
-
+        <br>
+        <br>
+        <br>
+            <center>
+            <div class="service-card">
+                <h4>¿Quienes desarrollaron la pagina?</h4>
+                <p>Descubre quienes programaron esta pagina para llevar a cabo el proyecto</p>
+                <a href="gracias/index.html">Más información</a>
+            </div>
+        </center>
+        
 </body>
 </html>
