@@ -8,19 +8,25 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>𝑀𝑖𝑛𝑒𝑟𝑖𝑎</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="investigacion.html">Investigación</a></li>
-
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+  <div class="container">
+    <h3>Mineria E.P.E.T</h3>
+    <!-- Ícono de hamburguesa -->
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="3/precentacion.html">Produccion</a></li>
+        <li><a href="materias.html">Materias</a></li>
+        <li><a href="inscrspcion.html">Inscripcion</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
     <!-- Cuerpo principal -->
     <main>
         <!--<section>
@@ -95,10 +101,17 @@
             </ul>
         </section>
     </main>
+ <script>
+  const hamburger = document.getElementById('hamburger');
+  const navList = document.getElementById('nav-list');
 
+  hamburger.addEventListener('click', () => {
+    navList.classList.toggle('nav-active'); // Alterna la clase que muestra/oculta el menú
+  });
+</script>
     <footer>
         <div class="container">
-            <p>&copy; 2024 Exploratorium. Todos los derechos reservados.</p>
+            <p></p>
         </div>
     </footer>
     <link rel="stylesheet" href="styles.css">

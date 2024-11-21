@@ -27,8 +27,9 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
             width: 100%;
+            max-width: 800px;
+            box-sizing: border-box;
         }
 
         /* Secciones y encabezados */
@@ -55,8 +56,7 @@
         /* Estilos para los grupos de campos */
         .field-group {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            flex-direction: column;
             margin: 10px 0;
             padding: 10px;
             border: 1px solid #ddd;
@@ -64,16 +64,15 @@
             background-color: #f9f9fc;
         }
 
-        label {
-            flex: 1;
+        .field-group label {
+            margin-bottom: 5px;
             font-weight: bold;
             color: #333;
         }
 
-        /* Campos de entrada */
         input[type="text"] {
-            width: 50px;
-            padding: 5px;
+            width: 100%;
+            padding: 8px;
             border: 1px solid #ccc;
             border-radius: 4px;
             text-align: center;
@@ -87,267 +86,183 @@
             margin-top: 15px;
         }
 
+        /* Estilos para la etiqueta de los totales */
+        .total-section input[type="text"] {
+            width: auto;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        /* Medias queries para pantallas pequeñas */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            form {
+                padding: 10px;
+            }
+
+            .field-group {
+                padding: 8px;
+            }
+
+            input[type="text"] {
+                padding: 6px;
+            }
+
+            .total-section {
+                text-align: left;
+            }
+        }
+
     </style>
 </head>
 <body>
-<h2></h2>
-<form>
+    <form>
+        <!-- CUARTO AÑO -->
+        <div class="form-section">
+            <h2>CUARTO AÑO</h2>
+            <h3>Formación General</h3>
+            <div class="field-group">
+                <label>Lengua y Literatura I</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Inglés Técnico I</label>
+                HCS: <input type="text" value="3">
+            </div>
+            <div class="field-group">
+                <label>Educación Física I</label>
+                HCS: <input type="text" value="3">
+            </div>
+            <div class="field-group">
+                <label>Geografía</label>
+                HCS: <input type="text" value="3">
+            </div>
+            <div class="field-group">
+                <label>Construcción de Ciudadanía</label>
+                HCS: <input type="text" value="3">
+            </div>
 
-    <!-- CUARTO AÑO -->
-    <div class="form-section">
-        <h2>CUARTO AÑO</h2>
-        
-        <h3>Formación General</h3>
-        <div class="field-group">
-            <label>Lengua y Literatura I</label>
-            HCS: <input type="text" value="4">
-        </div>
-        <div class="field-group">
-            <label>Inglés Técnico I</label>
-            HCS: <input type="text" value="3">
-            
-        </div>
-        <div class="field-group">
-            <label>Educación Física I</label>
-            HCS: <input type="text" value="3">
-            
-        </div>
-        <div class="field-group">
-            <label>Geografía</label>
-            HCS: <input type="text" value="3">
-            
-        </div>
-        <div class="field-group">
-            <label>Construcción de Ciudadanía</label>
-            HCS: <input type="text" value="3">
-           
-        </div>
+            <h3>Formación Científica Tecnológica</h3>
+            <div class="field-group">
+                <label>Matemática I</label>
+                HCS: <input type="text" value="5">
+            </div>
+            <div class="field-group">
+                <label>Química Inorgánica y Orgánica</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Tecnología de los Materiales</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Tecnología de la Información y la Comunicación</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Física Aplicada</label>
+                HCS: <input type="text" value="4">
+            </div>
 
-        <h3>Formación Científica Tecnológica</h3>
-        <div class="field-group">
-            <label>Matemática I</label>
-            HCS: <input type="text" value="5">
-            
-        </div>
-        <div class="field-group">
-            <label>Química Inorgánica y Orgánica</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="field-group">
-            <label>Tecnología de los Materiales</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="field-group">
-            <label>Tecnología de la Información y la Comunicación</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="field-group">
-            <label>Física Aplicada</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
+            <h3>Formación Técnica Específica</h3>
+            <div class="field-group">
+                <label>Petrografía y Petrología</label>
+                HCS: <input type="text" value="3">
+            </div>
+            <div class="field-group">
+                <label>Construcciones Mineras</label>
+                HCS: <input type="text" value="2">
+            </div>
+            <div class="field-group">
+                <label>Geología General</label>
+                HCS: <input type="text" value="4">
+            </div>
 
-        <h3>Formación Técnica Específica</h3>
-        <div class="field-group">
-            <label>Petrografía y Petrología</label>
-            HCS: <input type="text" value="3">
-            
-        </div>
-        <div class="field-group">
-            <label>Construcciones Mineras</label>
-            HCS: <input type="text" value="2">
-          
-        </div>
-        <div class="field-group">
-            <label>Geología General</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
+            <h3>Práctica Profesional</h3>
+            <div class="field-group">
+                <label>Práctica Profesionalizante</label>
+                HCS: <input type="text" value="4">
+            </div>
 
-        <h3>Práctica Profesional</h3>
-        <div class="field-group">
-            <label>Práctica Profesionalizante</label>
-            HCS: <input type="text" value="4">
-            
+            <div class="total-section">
+                <h4>Total Cuarto Año</h4>
+                HCS: <input type="text" value="50">
+            </div>
         </div>
+    </form>
+    <form>
+        <!-- QUINTO AÑO -->
+        <div class="form-section">
+            <h2>QUINTO AÑO</h2>
+            <h3>Formación General</h3>
+            <div class="field-group">
+                <label>Lengua y Literatura II</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Inglés Técnico II</label>
+                HCS: <input type="text" value="3">
+            </div>
+            <div class="field-group">
+                <label>Educación Física II</label>
+                HCS: <input type="text" value="3">
+            </div>
+            <div class="field-group">
+                <label>Historia</label>
+                HCS: <input type="text" value="3">
+            </div>
 
-        <div class="total-section">
-            <h4>Total Cuarto Año</h4>
-            HCS: <input type="text" value="50">
-            
-        </div>
-    </div>
+            <h3>Formación Científica Tecnológica</h3>
+            <div class="field-group">
+                <label>Matemática II</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Química Orgánica</label>
+                HCS: <input type="text" value="4">
+            </div>
 
-    <!-- Similar sections can be created for Quinto Año, Sexto Año, y Séptimo Año -->
+            <h3>Formación Técnica Específica</h3>
+            <div class="field-group">
+                <label>Tratamientos de Minerales I</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Laboreo de Minas I</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Yacimientos Mineros</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Topografía e Interpretación de Imágenes</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Mineralogía</label>
+                HCS: <input type="text" value="4">
+            </div>
+            <div class="field-group">
+                <label>Máquinas y Equipos Mineros</label>
+                HCS: <input type="text" value="4">
+            </div>
 
-</form>
+            <h3>Práctica Profesional</h3>
+            <div class="field-group">
+                <label>Práctica Profesionalizante</label>
+                HCS: <input type="text" value="4">
+            </div>
 
-<form>
+            <div class="total-section">
+                <h4>Total Quinto Año</h4>
+                HCS: <input type="text" value="4">
+              </form>  
 
-    <!-- QUINTO AÑO -->
-    <div class="form-section">
-        <h2>QUINTO AÑO</h2>
-        
-        <h3>Formación General</h3>
-        <div class="field-group">
-            <label>Lengua y Literatura II</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="field-group">
-            <label>Inglés Técnico II</label>
-            HCS: <input type="text" value="3">
-           
-        </div>
-        <div class="field-group">
-            <label>Educación Física II</label>
-            HCS: <input type="text" value="3">
-            
-        </div>
-        <div class="field-group">
-            <label>Historia</label>
-            HCS: <input type="text" value="3">
-            
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="3">
-            HRA: <input type="text" value="72">-->
-        </div>
-         <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-
-        <h3>Formación Científica Tecnológica</h3>
-        <div class="field-group">
-            <label>Matemática II</label>
-            HCS: <input type="text" value="4">
-           
-        </div>
-        <div class="field-group">
-            <label>Química Organica</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-        <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-         <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-         <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-         <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-         <div class="field-group">
-            <label></label>
-            <!--HCS: <input type="text" value="4">
-            HRA: <input type="text" value="96">-->
-        </div>
-
-        <h3>Formación Técnica Específica</h3>
-        <div class="field-group">
-            <label>Tratamientos de miinerales I</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="field-group">
-            <label>Laboreo de Minas I</label>
-            HCS: <input type="text" value="4"> 
-        </div>
-        <div class="field-group">
-            <label>Yacimientos Mineros</label>
-            HCS: <input type="text" value="4"> 
-        </div>
-        <div class="field-group">
-            <label>Topografia e Interpretacion de Imagenes</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="field-group">
-            <label>Mineralogia</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="field-group">
-            <label>Maquinas y Equipos Mineros</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        
-            
-        </div>
-        <h3>Práctica Profesional</h3>
-        <div class="field-group">
-            <label>Practica Profecionalisante</label>
-            HCS: <input type="text" value="4">
-            
-        </div>
-        <div class="total-section">
-            <h4>Total Quinto Año</h4>
-            HCS: <input type="text" value="49">
-    </div>
-
-    <!-- Similar sections can be created for Quinto Año, Sexto Año, y Séptimo Año -->
-
-</form>
-
-<form>
+              <form>
 
     <!-- SEXTO AÑO -->
     <div class="form-section">

@@ -11,22 +11,27 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>𝑀𝑖𝑛𝑒𝑟𝑖𝑎</h1>
-           
-            <nav>
-                <ul>
-                <li><a href="index.html">Inicio</a></li>
-                    <li><a href="investigacion.html">Investigación</a></li>
-                    <li><a href="comunidad.html">Comunidad</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="3/precentacion.html ">Produccion</a></li>
-                    <li><a href="materias.html">Materias</a></li>
-                     <li><a href="inscrpcion.html">Inscripcion</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <div class="container">
+    <h3>Mineria E.P.E.T</h3>
+    <!-- Ícono de hamburguesa -->
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="investigacion.html">Investigacion</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="3/precentacion.html">Produccion</a></li>
+        <li><a href="materias.html">Materias</a></li>
+        <li><a href="inscrspcion.html">Inscripcion</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
     <main>
       <center> <section class="hero">
@@ -81,13 +86,21 @@
         <div class="container">
             <!--<p>&copy; 2024 Exploratorium. Todos los derechos reservados.</p>-->
             <ul class="socials">
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <!--<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>-->
                 <li><a href="carusel4/index.html"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="https://www.google.com.ar/maps/place/E.P.E.T.+N%C2%B0+1+Albard%C3%B3n/@-31.4305314,-68.4947151,16.7z/data=!4m6!3m5!1s0x9681684c7c3522bf:0xeb466b022a9e1c91!8m2!3d-31.431758!4d-68.4944478!16s%2Fg%2F11g7z7z7t0?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"><i class="fab fa-google"></i></a></li>
             </ul>
         </div>
     </footer>
+    <script>
+  const hamburger = document.getElementById('hamburger');
+  const navList = document.getElementById('nav-list');
+
+  hamburger.addEventListener('click', () => {
+    navList.classList.toggle('nav-active'); // Alterna la clase que muestra/oculta el menú
+  });
+</script>
 
     <script src="script.js"></script>
 </body>

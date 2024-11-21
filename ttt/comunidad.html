@@ -8,18 +8,27 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <div class="container">
-            <h1>𝑀𝑖𝑛𝑒𝑟𝑖𝑎</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="investigacion.html">Investigación</a></li>
-                    <li><a href="recursos.html">Recursos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+     <header>
+  <div class="container">
+    <h3>Mineria E.P.E.T</h3>
+    <!-- Ícono de hamburguesa -->
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="investigacion.html">Investigacion</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="3/precentacion.html">Produccion</a></li>
+        <li><a href="materias.html">Materias</a></li>
+        <li><a href="inscrspcion.html">Inscripcion</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
     <!-- Cuerpo de la página -->
     <main>
@@ -76,7 +85,14 @@
             </ul>
         </section>
     </main>
+    <script>
+  const hamburger = document.getElementById('hamburger');
+  const navList = document.getElementById('nav-list');
 
+  hamburger.addEventListener('click', () => {
+    navList.classList.toggle('nav-active'); // Alterna la clase que muestra/oculta el menú
+  });
+</script>
     <!-- Pie de página -->
     <footer>
         <div class="container">
